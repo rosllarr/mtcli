@@ -1,0 +1,10 @@
+[package]
+name = "mtcli"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "mtcli"
+path = "src/mtcli/lib.rs"
+
+[dependencies]
