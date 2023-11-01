@@ -9,3 +9,4 @@ path = "src/mtcli/lib.rs"
 
 [dependencies]
 clap = "4.4.7"
+anyhow = "1.0.75"
