@@ -25,3 +25,10 @@ impl Config {
         Ok(Config::new(shell, cwd))
     }
 }
+
+#[macro_export]
+macro_rules! drop_print {
+    ($config:expr, $($arg:tt)*) => (
+        $crate::__shell_print!($config, out, false, $($arg)*)
+    );
+}
